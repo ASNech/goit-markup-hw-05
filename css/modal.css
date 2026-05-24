@@ -40,6 +40,8 @@
 }
 
 .modal-close {
+  width: 24px;
+  height: 24px;
   position: absolute;
   top: 24px;
   right: 24px;
@@ -48,14 +50,15 @@
   border-radius: 50%;
   cursor: pointer;
   line-height: 0;
-  padding: 8px;
+  padding: 7.35px;
   fill: #2e2f42;
   transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close:hover {
+.modal-close:hover,
+.modal-close:focus {
   background-color: #404bbf;
   fill: #ffffff;
   border-color: #404bbf;
@@ -88,9 +91,6 @@
   gap: 8px;
 }
 
-.input-item {
-}
-
 .input-label {
   display: block;
   font-size: 12px;
@@ -114,6 +114,7 @@
 }
 
 .input-field {
+  background-color: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding: 8px 38px;
@@ -124,6 +125,7 @@
 }
 
 .input-textarea {
+  background-color: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding: 8px 16px;
@@ -157,7 +159,7 @@
 }
 
 .form-checkbox {
-  margin-bottom: 16px;
+  margin-top: 16px;
 }
 
 .checkbox-label {
